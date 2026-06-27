@@ -15,13 +15,6 @@ Feed status tags (from a live check on 2026-06-27):
 lower number wins (kept), higher number is dropped.
 """
 
-# Browser-like User-Agent. Several feeds (Moneycontrol, Business Standard,
-# The Verge, Engadget, InfoQ) reject default clients, so we always send this.
-USER_AGENT = (
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-    "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
-)
-
 # (category_id, display title) — controls section order in the message.
 SECTIONS = [
     ("finance_global", "Global Finance & Markets"),
@@ -47,7 +40,7 @@ FEEDS = [
     {"category": "finance_global", "name": "Financial Times", "priority": 1,
      "url": "https://www.ft.com/rss/home"},
     {"category": "finance_global", "name": "MarketWatch", "priority": 2,
-     "url": "https://feeds.marketwatch.com/marketwatch/topstories/"},
+     "url": "http://feeds.marketwatch.com/marketwatch/topstories/"},
     {"category": "finance_global", "name": "Yahoo Finance", "priority": 3,
      "url": "https://finance.yahoo.com/news/rssindex"},
     {"category": "finance_global", "name": "Reuters", "priority": 5,

@@ -32,18 +32,22 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          # Optional: fan out to multiple chats and/or add Groq AI summaries.
+          # Define these as repo secrets to enable; empty/unset is fine.
+          TELEGRAM_CHAT_IDS: ${{ secrets.TELEGRAM_CHAT_IDS }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: python bot.py
 
-      - name: Commit updated seen state
+      - name: Commit updated state
         # Run even if the digest step failed: a partial send still records the
         # ids that were delivered, so we must persist them to avoid resending.
         if: ${{ !cancelled() }}
         run: |
-          if [ -n "$(git status --porcelain state/seen.json)" ]; then
+          if [ -n "$(git status --porcelain state/seen.json state/last_run.json)" ]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add state/seen.json
-            git commit -m "chore: update seen state [skip ci]"
+            git add state/seen.json state/last_run.json
+            git commit -m "chore: update run state [skip ci]"
             pushed=false
             for attempt in 1 2 3; do
               # Rebase onto any concurrent/remote changes before pushing so a

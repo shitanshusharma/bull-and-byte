@@ -13,7 +13,9 @@ Sections in each digest:
 - **AI** - VentureBeat AI, MIT Technology Review, The Verge AI, AI headlines
 - **Engineering Deep-Dives** - Martin Fowler, InfoQ, dev.to (architecture)
 
-No LLM, no API keys beyond the Telegram bot token.
+No LLM and no API keys beyond the Telegram bot token by default. Optional
+extras (both off unless configured): one-line **AI summaries** via Groq and
+fan-out to **multiple chats/channels**.
 
 ---
 
@@ -26,9 +28,17 @@ RSS feeds -> keep last ~26h -> drop already-sent (state/seen.json)
           -> record sent items so they never repeat
 ```
 
-- `feeds.py` - the feed list, section order, caps, and keyword filters. **This is the file you tune.**
-- `bot.py` - the pipeline above (`--dry-run` to preview without sending).
+- `src/feeds.py` - the feed list, section order, caps, and keyword filters. **This is the file you tune.**
+- `src/` - the package, organized by layer:
+  - `config.py` - env knobs and constants.
+  - `models/` - typed containers (`Item`, `RunStats`).
+  - `utils/` - generic helpers (logging, text tokenization).
+  - `core/` - the pipeline stages: `fetch` -> `pipeline` -> `summarize` -> `render`.
+  - `delivery/` - Telegram fan-out (`telegram`) and on-disk `state`.
+  - `cli.py` - orchestration / entry point.
+- `bot.py` - thin entry-point shim (`python bot.py --dry-run` to preview without sending).
 - `state/seen.json` - ids of recently sent articles (committed back by the workflow so nothing repeats).
+- `state/last_run.json` - machine-readable summary of the most recent run.
 - `.github/workflows/digest.yml` - the daily schedule.
 
 ---
@@ -51,6 +61,10 @@ RSS feeds -> keep last ~26h -> drop already-sent (state/seen.json)
 > To post to a **channel** instead, add the bot as an admin and use the channel's
 > `@username` or numeric id as `TELEGRAM_CHAT_ID`.
 
+> To send the **same digest to several chats/channels**, set `TELEGRAM_CHAT_IDS`
+> to a comma- or space-separated list (e.g. `-1001,-1002,@mychannel`). Ids from
+> `TELEGRAM_CHAT_ID` and `TELEGRAM_CHAT_IDS` are merged and de-duplicated.
+
 ### 3. Run it on GitHub (free, scheduled)
 
 1. Push this folder to a GitHub repo.
@@ -60,8 +74,8 @@ RSS feeds -> keep last ~26h -> drop already-sent (state/seen.json)
 3. Open the **Actions** tab, enable workflows, and either wait for the daily run
    or trigger **"Bull and Byte daily digest" -> Run workflow** to test immediately.
 
-The workflow commits the updated `state/seen.json` after each run so the next
-digest never repeats stories.
+The workflow commits the updated `state/seen.json` (and `state/last_run.json`)
+after each run so the next digest never repeats stories.
 
 ---
 
@@ -84,16 +98,22 @@ then run `python bot.py`. (`.env` is git-ignored.)
 
 ## Tuning
 
-All knobs live in `feeds.py`:
+All knobs live in `src/feeds.py`:
 
 - **Add / remove sources** - edit `FEEDS` (set `category`, `name`, `url`, `priority`; lower priority wins in de-dupe ties).
 - **Items per section** - `CATEGORY_CAPS`.
 - **Relevance filters** - `CATEGORY_KEYWORDS` (currently `ai` and `patterns`; add a category to filter it, remove it to keep everything).
 - **Section order / titles** - `SECTIONS`.
 
-Runtime knobs in `bot.py` (top of file): `WINDOW_HOURS` (also overridable via env;
-falls back to the default if set to a non-positive or non-integer value),
+Runtime knobs in `src/config.py`: `WINDOW_HOURS` (also overridable via
+env; falls back to the default if set to a non-positive or non-integer value),
 `SEEN_CAP`, `DEDUPE_THRESHOLD`.
+
+**AI summaries (optional):** set `GROQ_API_KEY` (free tier at
+[console.groq.com](https://console.groq.com/keys)) to add a one-line summary
+under each headline. Pick a model with `GROQ_MODEL` (default
+`llama-3.1-8b-instant`) or disable with `AI_SUMMARIES=0`. If the key is missing
+or the call fails, the digest is sent without summaries - it never blocks a run.
 
 **Quiet on empty days:** when nothing new is found the bot sends nothing. Pass
 `--notify-empty` if you'd rather still receive a "no new items" message.
