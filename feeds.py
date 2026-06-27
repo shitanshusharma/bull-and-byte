@@ -47,7 +47,7 @@ FEEDS = [
     {"category": "finance_global", "name": "Financial Times", "priority": 1,
      "url": "https://www.ft.com/rss/home"},
     {"category": "finance_global", "name": "MarketWatch", "priority": 2,
-     "url": "http://feeds.marketwatch.com/marketwatch/topstories/"},
+     "url": "https://feeds.marketwatch.com/marketwatch/topstories/"},
     {"category": "finance_global", "name": "Yahoo Finance", "priority": 3,
      "url": "https://finance.yahoo.com/news/rssindex"},
     {"category": "finance_global", "name": "Reuters", "priority": 5,

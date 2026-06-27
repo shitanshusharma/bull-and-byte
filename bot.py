@@ -38,7 +38,28 @@ from feeds import (
 BASE_DIR = Path(__file__).resolve().parent
 SEEN_PATH = BASE_DIR / "state" / "seen.json"
 
-WINDOW_HOURS = int(os.environ.get("WINDOW_HOURS", "26"))
+
+def log(msg):
+    print(f"[bull-and-byte] {msg}", flush=True)
+
+
+def _positive_int_env(name, default):
+    """Read a positive int from the env; warn and fall back if unset/invalid."""
+    raw = os.environ.get(name, "")
+    if not raw.strip():
+        return default
+    try:
+        value = int(raw)
+    except ValueError:
+        log(f"WARN  {name}={raw!r} is not a valid integer; using {default}")
+        return default
+    if value <= 0:
+        log(f"WARN  {name}={value} must be > 0; using {default}")
+        return default
+    return value
+
+
+WINDOW_HOURS = _positive_int_env("WINDOW_HOURS", 26)
 SEEN_CAP = 1000               # max remembered article ids
 DEDUPE_THRESHOLD = 0.6        # title token overlap above this == duplicate
 FETCH_TIMEOUT = 25            # seconds per feed
@@ -56,10 +77,6 @@ _STOPWORDS = {
 # --------------------------------------------------------------------------- #
 # Small helpers
 # --------------------------------------------------------------------------- #
-def log(msg):
-    print(f"[bull-and-byte] {msg}", flush=True)
-
-
 def load_dotenv():
     """Minimal .env loader (no dependency). Only sets vars not already set."""
     env_path = BASE_DIR / ".env"
@@ -229,24 +246,82 @@ def dedupe_and_cap(by_category, seen_ids):
 # --------------------------------------------------------------------------- #
 # Render
 # --------------------------------------------------------------------------- #
+def _truncate_escaped(raw, room):
+    """Longest HTML-escaped prefix of ``raw`` whose length fits in ``room``.
+
+    Truncating the raw string *before* escaping guarantees we never split an
+    HTML entity (e.g. ``&amp;``) and emit malformed markup to Telegram.
+    """
+    if room <= 0:
+        return ""
+    lo, hi, best = 0, len(raw), ""
+    while lo <= hi:
+        mid = (lo + hi) // 2
+        candidate = html.escape(raw[:mid])
+        if len(candidate) <= room:
+            best = candidate
+            lo = mid + 1
+        else:
+            hi = mid - 1
+    return best
+
+
+def render_line(it, limit):
+    """Render one bullet, guaranteed to be at most ``limit`` characters.
+
+    Normal-length items render in full; a pathologically long title (or link)
+    is truncated so a single bullet can never exceed Telegram's hard cap and
+    trigger a 400 / partial-send failure.
+    """
+    # html.unescape first: some feeds (e.g. The Verge) double-encode entities,
+    # so decode them before re-escaping for Telegram HTML.
+    raw_title = html.unescape(it["title"])
+    safe_link = html.escape(it["link"], quote=True)
+    safe_source = html.escape(it["source"])
+    prefix = f"\u2022 <a href=\"{safe_link}\">"
+    suffix = f"</a> <i>({safe_source})</i>"
+
+    full = prefix + html.escape(raw_title) + suffix
+    if len(full) <= limit:
+        return full
+
+    ellipsis = "\u2026"
+    room = limit - len(prefix) - len(suffix) - len(ellipsis)
+    truncated = _truncate_escaped(raw_title, room)
+    if truncated:
+        return prefix + truncated + ellipsis + suffix
+
+    # Link + source alone exceed the budget: drop the link, emit plain text.
+    plain_room = limit - len("\u2022 ") - len(ellipsis)
+    return "\u2022 " + _truncate_escaped(raw_title, plain_room) + ellipsis
+
+
 def render_messages(selected, now):
-    """Turn selected items into one or more <=4096-char HTML messages."""
+    """Split selected items into one or more <=4096-char HTML messages.
+
+    Returns a list of ``(text, ids)`` pairs, where ``ids`` are the article ids
+    whose bullets actually landed in that message. Tracking ids per message
+    lets the caller persist only what was truly delivered, so a partial send
+    never silently drops the undelivered sections from future digests.
+    """
     date_str = now.astimezone(IST).strftime("%d %b %Y")
     title_line = f"<b>Bull &amp; Byte</b> \u2014 daily digest \u00b7 {date_str}"
 
     total = sum(len(v) for v in selected.values())
     if total == 0:
-        return [f"{title_line}\n\nNo new items in the last {WINDOW_HOURS}h."]
+        return [(f"{title_line}\n\nNo new items in the last {WINDOW_HOURS}h.", [])]
 
     messages = []
     buf = [title_line]
+    buf_ids = []
     length = len(title_line) + 1
 
     def flush():
-        nonlocal buf, length
+        nonlocal buf, buf_ids, length
         if buf:
-            messages.append("\n".join(buf))
+            messages.append(("\n".join(buf), buf_ids))
         buf = []
+        buf_ids = []
         length = 0
 
     for cat, title in SECTIONS:
@@ -260,19 +335,14 @@ def render_messages(selected, now):
         length += len(header) + 1
 
         for it in items:
-            # html.unescape first: some feeds (e.g. The Verge) double-encode
-            # entities, so decode them before re-escaping for Telegram HTML.
-            safe_title = html.escape(html.unescape(it["title"]))
-            line = (
-                f"\u2022 <a href=\"{html.escape(it['link'], quote=True)}\">"
-                f"{safe_title}</a> <i>({html.escape(it['source'])})</i>"
-            )
+            line = render_line(it, TELEGRAM_LIMIT)
             if length + len(line) + 1 > TELEGRAM_LIMIT:
                 flush()
                 reheader = f"<b>{html.escape(title)} (cont.)</b>"
                 buf.append(reheader)
                 length += len(reheader) + 1
             buf.append(line)
+            buf_ids.append(it["id"])
             length += len(line) + 1
 
     flush()
@@ -329,6 +399,8 @@ def main():
                         help="print the digest instead of sending it")
     parser.add_argument("--save-state", action="store_true",
                         help="update seen.json even on a dry run")
+    parser.add_argument("--notify-empty", action="store_true",
+                        help="send a message even when there are no new items")
     args = parser.parse_args()
 
     # Make stdout UTF-8 so the --dry-run preview renders dashes/bullets and
@@ -351,15 +423,22 @@ def main():
     log(f"selected: {counts}")
 
     messages = render_messages(selected, now)
-    displayed_ids = [it["id"] for items in selected.values() for it in items]
+    has_items = any(ids for _text, ids in messages)
 
     if args.dry_run:
-        for i, msg in enumerate(messages, 1):
-            print(f"\n===== message {i}/{len(messages)} ({len(msg)} chars) =====")
-            print(msg)
-        if args.save_state and displayed_ids:
-            save_seen(seen, displayed_ids)
-            log(f"state updated (dry-run): +{len(displayed_ids)} ids")
+        for i, (text, _ids) in enumerate(messages, 1):
+            print(f"\n===== message {i}/{len(messages)} ({len(text)} chars) =====")
+            print(text)
+        if args.save_state:
+            primed = [item_id for _text, ids in messages for item_id in ids]
+            if primed:
+                save_seen(seen, primed)
+                log(f"state updated (dry-run): +{len(primed)} ids")
+        return 0
+
+    if not has_items and not args.notify_empty:
+        log("no new items in window - nothing to send "
+            "(use --notify-empty to send anyway)")
         return 0
 
     token = os.environ.get("TELEGRAM_BOT_TOKEN")
@@ -369,19 +448,27 @@ def main():
             "(or use --dry-run).")
         return 1
 
-    delivered = 0
-    for msg in messages:
-        if send_telegram(token, chat_id, msg):
-            delivered += 1
+    delivered_ids = []
+    failures = 0
+    for text, ids in messages:
+        if send_telegram(token, chat_id, text):
+            delivered_ids.extend(ids)
+        else:
+            failures += 1
         time.sleep(1)  # stay well under Telegram rate limits
 
-    log(f"delivered {delivered}/{len(messages)} message(s)")
+    log(f"delivered {len(messages) - failures}/{len(messages)} message(s)")
 
-    if delivered > 0 and displayed_ids:
-        save_seen(seen, displayed_ids)
-        log(f"state updated: +{len(displayed_ids)} ids (cap {SEEN_CAP})")
-    elif delivered == 0:
-        log("nothing delivered - seen.json left unchanged for retry")
+    # Persist only the ids from messages that actually went through, so a
+    # partial send never marks undelivered stories as "seen". Save before the
+    # failure return below so delivered progress is always recorded.
+    if delivered_ids:
+        save_seen(seen, delivered_ids)
+        log(f"state updated: +{len(delivered_ids)} ids (cap {SEEN_CAP})")
+
+    if failures:
+        log(f"WARN  {failures}/{len(messages)} message(s) failed - "
+            "their items kept for retry")
         return 1
     return 0
 

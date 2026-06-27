@@ -91,8 +91,12 @@ All knobs live in `feeds.py`:
 - **Relevance filters** - `CATEGORY_KEYWORDS` (currently `ai` and `patterns`; add a category to filter it, remove it to keep everything).
 - **Section order / titles** - `SECTIONS`.
 
-Runtime knobs in `bot.py` (top of file): `WINDOW_HOURS` (also overridable via env),
+Runtime knobs in `bot.py` (top of file): `WINDOW_HOURS` (also overridable via env;
+falls back to the default if set to a non-positive or non-integer value),
 `SEEN_CAP`, `DEDUPE_THRESHOLD`.
+
+**Quiet on empty days:** when nothing new is found the bot sends nothing. Pass
+`--notify-empty` if you'd rather still receive a "no new items" message.
 
 **Change the schedule:** edit the `cron` line in
 `.github/workflows/digest.yml`. It uses UTC - `0 3 * * *` is 08:30 IST. Add more
