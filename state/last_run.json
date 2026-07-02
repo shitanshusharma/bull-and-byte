@@ -1,6 +1,6 @@
 {
-  "started_at": "2026-07-01T07:05:57.879838+00:00",
-  "duration_sec": 10.96,
+  "started_at": "2026-07-02T06:33:59.450804+00:00",
+  "duration_sec": 12.21,
   "feeds_ok": 21,
   "feeds_failed": 1,
   "feeds": [
@@ -15,8 +15,8 @@
     {
       "name": "Financial Times",
       "category": "finance_global",
-      "kept": 11,
-      "total": 11,
+      "kept": 9,
+      "total": 9,
       "ok": true,
       "error": ""
     },
@@ -31,15 +31,15 @@
     {
       "name": "Yahoo Finance",
       "category": "finance_global",
-      "kept": 0,
-      "total": 41,
+      "kept": 1,
+      "total": 42,
       "ok": true,
       "error": ""
     },
     {
       "name": "Reuters",
       "category": "finance_global",
-      "kept": 59,
+      "kept": 52,
       "total": 100,
       "ok": true,
       "error": ""
@@ -87,7 +87,7 @@
     {
       "name": "TechCrunch",
       "category": "tech",
-      "kept": 20,
+      "kept": 18,
       "total": 20,
       "ok": true,
       "error": ""
@@ -95,7 +95,7 @@
     {
       "name": "Ars Technica",
       "category": "tech",
-      "kept": 14,
+      "kept": 12,
       "total": 20,
       "ok": true,
       "error": ""
@@ -111,7 +111,7 @@
     {
       "name": "Engadget",
       "category": "tech",
-      "kept": 19,
+      "kept": 15,
       "total": 20,
       "ok": true,
       "error": ""
@@ -119,8 +119,8 @@
     {
       "name": "Hacker News",
       "category": "tech",
-      "kept": 12,
-      "total": 16,
+      "kept": 14,
+      "total": 15,
       "ok": true,
       "error": ""
     },
@@ -135,7 +135,7 @@
     {
       "name": "MIT Tech Review",
       "category": "ai",
-      "kept": 2,
+      "kept": 1,
       "total": 10,
       "ok": true,
       "error": ""
@@ -143,7 +143,7 @@
     {
       "name": "The Verge AI",
       "category": "ai",
-      "kept": 5,
+      "kept": 1,
       "total": 10,
       "ok": true,
       "error": ""
@@ -167,7 +167,7 @@
     {
       "name": "InfoQ",
       "category": "patterns",
-      "kept": 5,
+      "kept": 4,
       "total": 15,
       "ok": true,
       "error": ""
