@@ -1,6 +1,6 @@
 {
-  "started_at": "2026-07-02T06:33:59.450804+00:00",
-  "duration_sec": 12.21,
+  "started_at": "2026-07-03T06:24:44.549205+00:00",
+  "duration_sec": 12.59,
   "feeds_ok": 21,
   "feeds_failed": 1,
   "feeds": [
@@ -15,8 +15,8 @@
     {
       "name": "Financial Times",
       "category": "finance_global",
-      "kept": 9,
-      "total": 9,
+      "kept": 8,
+      "total": 8,
       "ok": true,
       "error": ""
     },
@@ -31,15 +31,15 @@
     {
       "name": "Yahoo Finance",
       "category": "finance_global",
-      "kept": 1,
-      "total": 42,
+      "kept": 0,
+      "total": 41,
       "ok": true,
       "error": ""
     },
     {
       "name": "Reuters",
       "category": "finance_global",
-      "kept": 52,
+      "kept": 54,
       "total": 100,
       "ok": true,
       "error": ""
@@ -87,7 +87,7 @@
     {
       "name": "TechCrunch",
       "category": "tech",
-      "kept": 18,
+      "kept": 20,
       "total": 20,
       "ok": true,
       "error": ""
@@ -95,7 +95,7 @@
     {
       "name": "Ars Technica",
       "category": "tech",
-      "kept": 12,
+      "kept": 13,
       "total": 20,
       "ok": true,
       "error": ""
@@ -111,7 +111,7 @@
     {
       "name": "Engadget",
       "category": "tech",
-      "kept": 15,
+      "kept": 14,
       "total": 20,
       "ok": true,
       "error": ""
@@ -119,8 +119,8 @@
     {
       "name": "Hacker News",
       "category": "tech",
-      "kept": 14,
-      "total": 15,
+      "kept": 15,
+      "total": 17,
       "ok": true,
       "error": ""
     },
@@ -135,7 +135,7 @@
     {
       "name": "MIT Tech Review",
       "category": "ai",
-      "kept": 1,
+      "kept": 2,
       "total": 10,
       "ok": true,
       "error": ""
