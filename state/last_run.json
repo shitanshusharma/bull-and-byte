@@ -1,13 +1,13 @@
 {
-  "started_at": "2026-07-05T06:33:27.637260+00:00",
-  "duration_sec": 13.27,
+  "started_at": "2026-07-06T07:04:53.567024+00:00",
+  "duration_sec": 12.53,
   "feeds_ok": 21,
   "feeds_failed": 1,
   "feeds": [
     {
       "name": "CNBC",
       "category": "finance_global",
-      "kept": 5,
+      "kept": 13,
       "total": 30,
       "ok": true,
       "error": ""
@@ -15,15 +15,15 @@
     {
       "name": "Financial Times",
       "category": "finance_global",
-      "kept": 9,
-      "total": 9,
+      "kept": 10,
+      "total": 10,
       "ok": true,
       "error": ""
     },
     {
       "name": "MarketWatch",
       "category": "finance_global",
-      "kept": 10,
+      "kept": 6,
       "total": 10,
       "ok": true,
       "error": ""
@@ -31,15 +31,15 @@
     {
       "name": "Yahoo Finance",
       "category": "finance_global",
-      "kept": 0,
-      "total": 50,
+      "kept": 2,
+      "total": 49,
       "ok": true,
       "error": ""
     },
     {
       "name": "Reuters",
       "category": "finance_global",
-      "kept": 10,
+      "kept": 16,
       "total": 100,
       "ok": true,
       "error": ""
@@ -47,7 +47,7 @@
     {
       "name": "Economic Times",
       "category": "finance_india",
-      "kept": 28,
+      "kept": 50,
       "total": 50,
       "ok": true,
       "error": ""
@@ -55,7 +55,7 @@
     {
       "name": "LiveMint",
       "category": "finance_india",
-      "kept": 10,
+      "kept": 34,
       "total": 35,
       "ok": true,
       "error": ""
@@ -64,7 +64,7 @@
       "name": "Moneycontrol",
       "category": "finance_india",
       "kept": 0,
-      "total": 0,
+      "total": 15,
       "ok": true,
       "error": ""
     },
@@ -79,15 +79,15 @@
     {
       "name": "India Markets",
       "category": "finance_india",
-      "kept": 49,
-      "total": 49,
+      "kept": 100,
+      "total": 100,
       "ok": true,
       "error": ""
     },
     {
       "name": "TechCrunch",
       "category": "tech",
-      "kept": 4,
+      "kept": 7,
       "total": 20,
       "ok": true,
       "error": ""
@@ -95,7 +95,7 @@
     {
       "name": "Ars Technica",
       "category": "tech",
-      "kept": 3,
+      "kept": 2,
       "total": 20,
       "ok": true,
       "error": ""
@@ -111,7 +111,7 @@
     {
       "name": "Engadget",
       "category": "tech",
-      "kept": 8,
+      "kept": 4,
       "total": 20,
       "ok": true,
       "error": ""
@@ -119,8 +119,8 @@
     {
       "name": "Hacker News",
       "category": "tech",
-      "kept": 9,
-      "total": 11,
+      "kept": 12,
+      "total": 14,
       "ok": true,
       "error": ""
     },
@@ -143,7 +143,7 @@
     {
       "name": "The Verge AI",
       "category": "ai",
-      "kept": 1,
+      "kept": 2,
       "total": 10,
       "ok": true,
       "error": ""
@@ -167,7 +167,7 @@
     {
       "name": "InfoQ",
       "category": "patterns",
-      "kept": 1,
+      "kept": 3,
       "total": 15,
       "ok": true,
       "error": ""
