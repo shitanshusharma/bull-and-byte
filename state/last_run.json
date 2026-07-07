@@ -1,13 +1,13 @@
 {
-  "started_at": "2026-07-06T07:04:53.567024+00:00",
-  "duration_sec": 12.53,
+  "started_at": "2026-07-07T06:38:32.135515+00:00",
+  "duration_sec": 34.43,
   "feeds_ok": 21,
   "feeds_failed": 1,
   "feeds": [
     {
       "name": "CNBC",
       "category": "finance_global",
-      "kept": 13,
+      "kept": 28,
       "total": 30,
       "ok": true,
       "error": ""
@@ -23,7 +23,7 @@
     {
       "name": "MarketWatch",
       "category": "finance_global",
-      "kept": 6,
+      "kept": 10,
       "total": 10,
       "ok": true,
       "error": ""
@@ -31,15 +31,15 @@
     {
       "name": "Yahoo Finance",
       "category": "finance_global",
-      "kept": 2,
-      "total": 49,
+      "kept": 1,
+      "total": 42,
       "ok": true,
       "error": ""
     },
     {
       "name": "Reuters",
       "category": "finance_global",
-      "kept": 16,
+      "kept": 72,
       "total": 100,
       "ok": true,
       "error": ""
@@ -55,7 +55,7 @@
     {
       "name": "LiveMint",
       "category": "finance_india",
-      "kept": 34,
+      "kept": 35,
       "total": 35,
       "ok": true,
       "error": ""
@@ -87,7 +87,7 @@
     {
       "name": "TechCrunch",
       "category": "tech",
-      "kept": 7,
+      "kept": 16,
       "total": 20,
       "ok": true,
       "error": ""
@@ -95,7 +95,7 @@
     {
       "name": "Ars Technica",
       "category": "tech",
-      "kept": 2,
+      "kept": 12,
       "total": 20,
       "ok": true,
       "error": ""
@@ -103,7 +103,7 @@
     {
       "name": "The Verge",
       "category": "tech",
-      "kept": 8,
+      "kept": 10,
       "total": 10,
       "ok": true,
       "error": ""
@@ -111,7 +111,7 @@
     {
       "name": "Engadget",
       "category": "tech",
-      "kept": 4,
+      "kept": 15,
       "total": 20,
       "ok": true,
       "error": ""
@@ -119,8 +119,8 @@
     {
       "name": "Hacker News",
       "category": "tech",
-      "kept": 12,
-      "total": 14,
+      "kept": 15,
+      "total": 15,
       "ok": true,
       "error": ""
     },
@@ -135,7 +135,7 @@
     {
       "name": "MIT Tech Review",
       "category": "ai",
-      "kept": 0,
+      "kept": 1,
       "total": 10,
       "ok": true,
       "error": ""
@@ -159,7 +159,7 @@
     {
       "name": "Martin Fowler",
       "category": "patterns",
-      "kept": 0,
+      "kept": 1,
       "total": 30,
       "ok": true,
       "error": ""
@@ -167,7 +167,7 @@
     {
       "name": "InfoQ",
       "category": "patterns",
-      "kept": 3,
+      "kept": 7,
       "total": 15,
       "ok": true,
       "error": ""
