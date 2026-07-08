@@ -1,13 +1,13 @@
 {
-  "started_at": "2026-07-07T06:38:32.135515+00:00",
-  "duration_sec": 34.43,
+  "started_at": "2026-07-08T05:43:06.202168+00:00",
+  "duration_sec": 12.98,
   "feeds_ok": 21,
   "feeds_failed": 1,
   "feeds": [
     {
       "name": "CNBC",
       "category": "finance_global",
-      "kept": 28,
+      "kept": 29,
       "total": 30,
       "ok": true,
       "error": ""
@@ -15,8 +15,8 @@
     {
       "name": "Financial Times",
       "category": "finance_global",
-      "kept": 10,
-      "total": 10,
+      "kept": 11,
+      "total": 11,
       "ok": true,
       "error": ""
     },
@@ -39,7 +39,7 @@
     {
       "name": "Reuters",
       "category": "finance_global",
-      "kept": 72,
+      "kept": 49,
       "total": 100,
       "ok": true,
       "error": ""
@@ -87,7 +87,7 @@
     {
       "name": "TechCrunch",
       "category": "tech",
-      "kept": 16,
+      "kept": 17,
       "total": 20,
       "ok": true,
       "error": ""
@@ -95,7 +95,7 @@
     {
       "name": "Ars Technica",
       "category": "tech",
-      "kept": 12,
+      "kept": 14,
       "total": 20,
       "ok": true,
       "error": ""
@@ -111,7 +111,7 @@
     {
       "name": "Engadget",
       "category": "tech",
-      "kept": 15,
+      "kept": 20,
       "total": 20,
       "ok": true,
       "error": ""
@@ -119,8 +119,8 @@
     {
       "name": "Hacker News",
       "category": "tech",
-      "kept": 15,
-      "total": 15,
+      "kept": 16,
+      "total": 17,
       "ok": true,
       "error": ""
     },
@@ -143,7 +143,7 @@
     {
       "name": "The Verge AI",
       "category": "ai",
-      "kept": 2,
+      "kept": 3,
       "total": 10,
       "ok": true,
       "error": ""
@@ -167,7 +167,7 @@
     {
       "name": "InfoQ",
       "category": "patterns",
-      "kept": 7,
+      "kept": 5,
       "total": 15,
       "ok": true,
       "error": ""
@@ -191,9 +191,9 @@
   "ai_enabled": true,
   "ai_summarized": 27,
   "ai_note": "summarized 27/27",
-  "messages_built": 4,
+  "messages_built": 3,
   "delivered_per_chat": {
-    "5073493944": 4
+    "5073493944": 3
   },
   "failures": 0
 }
