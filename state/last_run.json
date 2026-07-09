@@ -1,6 +1,6 @@
 {
-  "started_at": "2026-07-08T05:43:06.202168+00:00",
-  "duration_sec": 12.98,
+  "started_at": "2026-07-09T06:36:23.587168+00:00",
+  "duration_sec": 12.13,
   "feeds_ok": 21,
   "feeds_failed": 1,
   "feeds": [
@@ -15,8 +15,8 @@
     {
       "name": "Financial Times",
       "category": "finance_global",
-      "kept": 11,
-      "total": 11,
+      "kept": 10,
+      "total": 10,
       "ok": true,
       "error": ""
     },
@@ -31,7 +31,7 @@
     {
       "name": "Yahoo Finance",
       "category": "finance_global",
-      "kept": 1,
+      "kept": 3,
       "total": 42,
       "ok": true,
       "error": ""
@@ -39,7 +39,7 @@
     {
       "name": "Reuters",
       "category": "finance_global",
-      "kept": 49,
+      "kept": 47,
       "total": 100,
       "ok": true,
       "error": ""
@@ -87,7 +87,7 @@
     {
       "name": "TechCrunch",
       "category": "tech",
-      "kept": 17,
+      "kept": 20,
       "total": 20,
       "ok": true,
       "error": ""
@@ -119,8 +119,8 @@
     {
       "name": "Hacker News",
       "category": "tech",
-      "kept": 16,
-      "total": 17,
+      "kept": 0,
+      "total": 0,
       "ok": true,
       "error": ""
     },
@@ -135,7 +135,7 @@
     {
       "name": "MIT Tech Review",
       "category": "ai",
-      "kept": 1,
+      "kept": 0,
       "total": 10,
       "ok": true,
       "error": ""
@@ -143,7 +143,7 @@
     {
       "name": "The Verge AI",
       "category": "ai",
-      "kept": 3,
+      "kept": 1,
       "total": 10,
       "ok": true,
       "error": ""
@@ -167,7 +167,7 @@
     {
       "name": "InfoQ",
       "category": "patterns",
-      "kept": 5,
+      "kept": 2,
       "total": 15,
       "ok": true,
       "error": ""
