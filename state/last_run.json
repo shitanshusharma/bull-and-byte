@@ -1,13 +1,13 @@
 {
-  "started_at": "2026-07-13T06:06:59.239465+00:00",
-  "duration_sec": 13.27,
+  "started_at": "2026-07-14T05:22:40.072468+00:00",
+  "duration_sec": 15.42,
   "feeds_ok": 21,
   "feeds_failed": 1,
   "feeds": [
     {
       "name": "CNBC",
       "category": "finance_global",
-      "kept": 16,
+      "kept": 30,
       "total": 30,
       "ok": true,
       "error": ""
@@ -15,15 +15,15 @@
     {
       "name": "Financial Times",
       "category": "finance_global",
-      "kept": 13,
-      "total": 13,
+      "kept": 11,
+      "total": 11,
       "ok": true,
       "error": ""
     },
     {
       "name": "MarketWatch",
       "category": "finance_global",
-      "kept": 7,
+      "kept": 10,
       "total": 10,
       "ok": true,
       "error": ""
@@ -31,7 +31,7 @@
     {
       "name": "Yahoo Finance",
       "category": "finance_global",
-      "kept": 4,
+      "kept": 7,
       "total": 50,
       "ok": true,
       "error": ""
@@ -39,7 +39,7 @@
     {
       "name": "Reuters",
       "category": "finance_global",
-      "kept": 13,
+      "kept": 75,
       "total": 100,
       "ok": true,
       "error": ""
@@ -64,7 +64,7 @@
       "name": "Moneycontrol",
       "category": "finance_india",
       "kept": 0,
-      "total": 0,
+      "total": 15,
       "ok": true,
       "error": ""
     },
@@ -87,7 +87,7 @@
     {
       "name": "TechCrunch",
       "category": "tech",
-      "kept": 1,
+      "kept": 18,
       "total": 20,
       "ok": true,
       "error": ""
@@ -95,7 +95,7 @@
     {
       "name": "Ars Technica",
       "category": "tech",
-      "kept": 1,
+      "kept": 15,
       "total": 20,
       "ok": true,
       "error": ""
@@ -103,7 +103,7 @@
     {
       "name": "The Verge",
       "category": "tech",
-      "kept": 8,
+      "kept": 10,
       "total": 10,
       "ok": true,
       "error": ""
@@ -111,7 +111,7 @@
     {
       "name": "Engadget",
       "category": "tech",
-      "kept": 8,
+      "kept": 14,
       "total": 20,
       "ok": true,
       "error": ""
@@ -119,8 +119,8 @@
     {
       "name": "Hacker News",
       "category": "tech",
-      "kept": 13,
-      "total": 18,
+      "kept": 7,
+      "total": 8,
       "ok": true,
       "error": ""
     },
@@ -135,7 +135,7 @@
     {
       "name": "MIT Tech Review",
       "category": "ai",
-      "kept": 0,
+      "kept": 1,
       "total": 10,
       "ok": true,
       "error": ""
@@ -159,7 +159,7 @@
     {
       "name": "Martin Fowler",
       "category": "patterns",
-      "kept": 0,
+      "kept": 1,
       "total": 30,
       "ok": true,
       "error": ""
@@ -167,7 +167,7 @@
     {
       "name": "InfoQ",
       "category": "patterns",
-      "kept": 1,
+      "kept": 7,
       "total": 15,
       "ok": true,
       "error": ""
@@ -191,9 +191,9 @@
   "ai_enabled": true,
   "ai_summarized": 27,
   "ai_note": "summarized 27/27",
-  "messages_built": 4,
+  "messages_built": 3,
   "delivered_per_chat": {
-    "5073493944": 4
+    "5073493944": 3
   },
   "failures": 0
 }
