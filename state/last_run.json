@@ -1,6 +1,6 @@
 {
-  "started_at": "2026-07-15T05:23:45.274939+00:00",
-  "duration_sec": 10.63,
+  "started_at": "2026-07-16T05:32:37.827026+00:00",
+  "duration_sec": 16.78,
   "feeds_ok": 21,
   "feeds_failed": 1,
   "feeds": [
@@ -31,15 +31,15 @@
     {
       "name": "Yahoo Finance",
       "category": "finance_global",
-      "kept": 2,
-      "total": 41,
+      "kept": 0,
+      "total": 42,
       "ok": true,
       "error": ""
     },
     {
       "name": "Reuters",
       "category": "finance_global",
-      "kept": 56,
+      "kept": 47,
       "total": 100,
       "ok": true,
       "error": ""
@@ -95,7 +95,7 @@
     {
       "name": "Ars Technica",
       "category": "tech",
-      "kept": 9,
+      "kept": 13,
       "total": 20,
       "ok": true,
       "error": ""
@@ -111,7 +111,7 @@
     {
       "name": "Engadget",
       "category": "tech",
-      "kept": 19,
+      "kept": 20,
       "total": 20,
       "ok": true,
       "error": ""
@@ -119,15 +119,15 @@
     {
       "name": "Hacker News",
       "category": "tech",
-      "kept": 12,
-      "total": 17,
+      "kept": 10,
+      "total": 11,
       "ok": true,
       "error": ""
     },
     {
       "name": "VentureBeat AI",
       "category": "ai",
-      "kept": 0,
+      "kept": 1,
       "total": 7,
       "ok": true,
       "error": ""
@@ -135,7 +135,7 @@
     {
       "name": "MIT Tech Review",
       "category": "ai",
-      "kept": 0,
+      "kept": 1,
       "total": 10,
       "ok": true,
       "error": ""
@@ -143,7 +143,7 @@
     {
       "name": "The Verge AI",
       "category": "ai",
-      "kept": 8,
+      "kept": 4,
       "total": 10,
       "ok": true,
       "error": ""
@@ -159,7 +159,7 @@
     {
       "name": "Martin Fowler",
       "category": "patterns",
-      "kept": 1,
+      "kept": 0,
       "total": 30,
       "ok": true,
       "error": ""
@@ -167,7 +167,7 @@
     {
       "name": "InfoQ",
       "category": "patterns",
-      "kept": 9,
+      "kept": 3,
       "total": 15,
       "ok": true,
       "error": ""
@@ -191,9 +191,9 @@
   "ai_enabled": true,
   "ai_summarized": 27,
   "ai_note": "summarized 27/27",
-  "messages_built": 3,
+  "messages_built": 4,
   "delivered_per_chat": {
-    "5073493944": 3
+    "5073493944": 4
   },
   "failures": 0
 }
