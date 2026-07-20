@@ -1,13 +1,13 @@
 {
-  "started_at": "2026-07-19T05:43:32.794337+00:00",
-  "duration_sec": 14.35,
-  "feeds_ok": 21,
-  "feeds_failed": 1,
+  "started_at": "2026-07-20T06:08:45.899045+00:00",
+  "duration_sec": 31.94,
+  "feeds_ok": 18,
+  "feeds_failed": 4,
   "feeds": [
     {
       "name": "CNBC",
       "category": "finance_global",
-      "kept": 14,
+      "kept": 21,
       "total": 30,
       "ok": true,
       "error": ""
@@ -23,7 +23,7 @@
     {
       "name": "MarketWatch",
       "category": "finance_global",
-      "kept": 10,
+      "kept": 8,
       "total": 10,
       "ok": true,
       "error": ""
@@ -31,23 +31,23 @@
     {
       "name": "Yahoo Finance",
       "category": "finance_global",
-      "kept": 2,
-      "total": 42,
+      "kept": 3,
+      "total": 47,
       "ok": true,
       "error": ""
     },
     {
       "name": "Reuters",
       "category": "finance_global",
-      "kept": 6,
-      "total": 100,
-      "ok": true,
-      "error": ""
+      "kept": 0,
+      "total": 0,
+      "ok": false,
+      "error": "503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=site:reuters.com+business+OR+markets&hl=en-US&gl=US&ceid=US:en"
     },
     {
       "name": "Economic Times",
       "category": "finance_india",
-      "kept": 38,
+      "kept": 50,
       "total": 50,
       "ok": true,
       "error": ""
@@ -55,7 +55,7 @@
     {
       "name": "LiveMint",
       "category": "finance_india",
-      "kept": 12,
+      "kept": 35,
       "total": 35,
       "ok": true,
       "error": ""
@@ -64,7 +64,7 @@
       "name": "Moneycontrol",
       "category": "finance_india",
       "kept": 0,
-      "total": 0,
+      "total": 15,
       "ok": true,
       "error": ""
     },
@@ -79,10 +79,10 @@
     {
       "name": "India Markets",
       "category": "finance_india",
-      "kept": 46,
-      "total": 46,
-      "ok": true,
-      "error": ""
+      "kept": 0,
+      "total": 0,
+      "ok": false,
+      "error": "503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=India+stock+market+OR+Sensex+OR+Nifty+OR+RBI+OR+SEBI+when:1d&hl=en-IN&gl=IN&ceid=IN:en"
     },
     {
       "name": "TechCrunch",
@@ -95,7 +95,7 @@
     {
       "name": "Ars Technica",
       "category": "tech",
-      "kept": 1,
+      "kept": 2,
       "total": 20,
       "ok": true,
       "error": ""
@@ -111,7 +111,7 @@
     {
       "name": "Engadget",
       "category": "tech",
-      "kept": 10,
+      "kept": 5,
       "total": 20,
       "ok": true,
       "error": ""
@@ -119,8 +119,8 @@
     {
       "name": "Hacker News",
       "category": "tech",
-      "kept": 12,
-      "total": 15,
+      "kept": 10,
+      "total": 11,
       "ok": true,
       "error": ""
     },
@@ -143,7 +143,7 @@
     {
       "name": "The Verge AI",
       "category": "ai",
-      "kept": 2,
+      "kept": 1,
       "total": 10,
       "ok": true,
       "error": ""
@@ -151,10 +151,10 @@
     {
       "name": "AI Headlines",
       "category": "ai",
-      "kept": 100,
-      "total": 100,
-      "ok": true,
-      "error": ""
+      "kept": 0,
+      "total": 0,
+      "ok": false,
+      "error": "503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=AI+OR+%22artificial+intelligence%22+when:1d&hl=en-US&gl=US&ceid=US:en"
     },
     {
       "name": "Martin Fowler",
@@ -167,7 +167,7 @@
     {
       "name": "InfoQ",
       "category": "patterns",
-      "kept": 2,
+      "kept": 3,
       "total": 15,
       "ok": true,
       "error": ""
@@ -185,15 +185,15 @@
     "finance_global": 6,
     "finance_india": 5,
     "tech": 6,
-    "ai": 6,
+    "ai": 0,
     "patterns": 4
   },
   "ai_enabled": true,
-  "ai_summarized": 27,
-  "ai_note": "summarized 27/27",
-  "messages_built": 4,
+  "ai_summarized": 21,
+  "ai_note": "summarized 21/21",
+  "messages_built": 2,
   "delivered_per_chat": {
-    "5073493944": 4
+    "5073493944": 2
   },
   "failures": 0
 }
