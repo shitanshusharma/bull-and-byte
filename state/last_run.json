@@ -1,8 +1,8 @@
 {
-  "started_at": "2026-07-23T05:46:16.038156+00:00",
-  "duration_sec": 13.57,
-  "feeds_ok": 20,
-  "feeds_failed": 2,
+  "started_at": "2026-07-24T05:42:34.140816+00:00",
+  "duration_sec": 14.27,
+  "feeds_ok": 21,
+  "feeds_failed": 1,
   "feeds": [
     {
       "name": "CNBC",
@@ -15,31 +15,31 @@
     {
       "name": "Financial Times",
       "category": "finance_global",
-      "kept": 12,
-      "total": 12,
+      "kept": 8,
+      "total": 8,
       "ok": true,
       "error": ""
     },
     {
       "name": "MarketWatch",
       "category": "finance_global",
-      "kept": 0,
-      "total": 0,
-      "ok": false,
-      "error": "('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))"
+      "kept": 10,
+      "total": 10,
+      "ok": true,
+      "error": ""
     },
     {
       "name": "Yahoo Finance",
       "category": "finance_global",
-      "kept": 3,
-      "total": 44,
+      "kept": 2,
+      "total": 42,
       "ok": true,
       "error": ""
     },
     {
       "name": "Reuters",
       "category": "finance_global",
-      "kept": 60,
+      "kept": 58,
       "total": 100,
       "ok": true,
       "error": ""
@@ -95,7 +95,7 @@
     {
       "name": "Ars Technica",
       "category": "tech",
-      "kept": 12,
+      "kept": 13,
       "total": 20,
       "ok": true,
       "error": ""
@@ -119,8 +119,8 @@
     {
       "name": "Hacker News",
       "category": "tech",
-      "kept": 15,
-      "total": 15,
+      "kept": 16,
+      "total": 18,
       "ok": true,
       "error": ""
     },
@@ -135,7 +135,7 @@
     {
       "name": "MIT Tech Review",
       "category": "ai",
-      "kept": 0,
+      "kept": 1,
       "total": 10,
       "ok": true,
       "error": ""
@@ -143,7 +143,7 @@
     {
       "name": "The Verge AI",
       "category": "ai",
-      "kept": 4,
+      "kept": 7,
       "total": 10,
       "ok": true,
       "error": ""
@@ -167,7 +167,7 @@
     {
       "name": "InfoQ",
       "category": "patterns",
-      "kept": 5,
+      "kept": 8,
       "total": 15,
       "ok": true,
       "error": ""
