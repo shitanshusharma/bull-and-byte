@@ -1,6 +1,6 @@
 {
-  "started_at": "2026-07-31T05:57:49.816966+00:00",
-  "duration_sec": 17.18,
+  "started_at": "2026-08-01T05:47:41.992233+00:00",
+  "duration_sec": 13.03,
   "feeds_ok": 21,
   "feeds_failed": 1,
   "feeds": [
@@ -15,8 +15,8 @@
     {
       "name": "Financial Times",
       "category": "finance_global",
-      "kept": 10,
-      "total": 10,
+      "kept": 11,
+      "total": 11,
       "ok": true,
       "error": ""
     },
@@ -39,7 +39,7 @@
     {
       "name": "Reuters",
       "category": "finance_global",
-      "kept": 61,
+      "kept": 52,
       "total": 100,
       "ok": true,
       "error": ""
@@ -79,15 +79,15 @@
     {
       "name": "India Markets",
       "category": "finance_india",
-      "kept": 100,
-      "total": 100,
+      "kept": 97,
+      "total": 97,
       "ok": true,
       "error": ""
     },
     {
       "name": "TechCrunch",
       "category": "tech",
-      "kept": 20,
+      "kept": 18,
       "total": 20,
       "ok": true,
       "error": ""
@@ -95,7 +95,7 @@
     {
       "name": "Ars Technica",
       "category": "tech",
-      "kept": 2,
+      "kept": 16,
       "total": 20,
       "ok": true,
       "error": ""
@@ -119,8 +119,8 @@
     {
       "name": "Hacker News",
       "category": "tech",
-      "kept": 19,
-      "total": 19,
+      "kept": 13,
+      "total": 14,
       "ok": true,
       "error": ""
     },
@@ -135,7 +135,7 @@
     {
       "name": "MIT Tech Review",
       "category": "ai",
-      "kept": 1,
+      "kept": 0,
       "total": 10,
       "ok": true,
       "error": ""
@@ -167,7 +167,7 @@
     {
       "name": "InfoQ",
       "category": "patterns",
-      "kept": 3,
+      "kept": 5,
       "total": 15,
       "ok": true,
       "error": ""
