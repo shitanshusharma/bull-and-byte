@@ -1,13 +1,13 @@
 {
-  "started_at": "2026-08-07T04:49:22.157593+00:00",
-  "duration_sec": 12.82,
+  "started_at": "2026-08-08T04:06:34.517006+00:00",
+  "duration_sec": 13.03,
   "feeds_ok": 21,
   "feeds_failed": 1,
   "feeds": [
     {
       "name": "CNBC",
       "category": "finance_global",
-      "kept": 28,
+      "kept": 25,
       "total": 30,
       "ok": true,
       "error": ""
@@ -15,8 +15,8 @@
     {
       "name": "Financial Times",
       "category": "finance_global",
-      "kept": 8,
-      "total": 8,
+      "kept": 9,
+      "total": 9,
       "ok": true,
       "error": ""
     },
@@ -31,7 +31,7 @@
     {
       "name": "Yahoo Finance",
       "category": "finance_global",
-      "kept": 0,
+      "kept": 1,
       "total": 41,
       "ok": true,
       "error": ""
@@ -39,7 +39,7 @@
     {
       "name": "Reuters",
       "category": "finance_global",
-      "kept": 52,
+      "kept": 37,
       "total": 100,
       "ok": true,
       "error": ""
@@ -87,7 +87,7 @@
     {
       "name": "TechCrunch",
       "category": "tech",
-      "kept": 20,
+      "kept": 14,
       "total": 20,
       "ok": true,
       "error": ""
@@ -95,7 +95,7 @@
     {
       "name": "Ars Technica",
       "category": "tech",
-      "kept": 13,
+      "kept": 15,
       "total": 20,
       "ok": true,
       "error": ""
@@ -111,7 +111,7 @@
     {
       "name": "Engadget",
       "category": "tech",
-      "kept": 20,
+      "kept": 16,
       "total": 20,
       "ok": true,
       "error": ""
@@ -119,8 +119,8 @@
     {
       "name": "Hacker News",
       "category": "tech",
-      "kept": 13,
-      "total": 17,
+      "kept": 18,
+      "total": 20,
       "ok": true,
       "error": ""
     },
@@ -143,7 +143,7 @@
     {
       "name": "The Verge AI",
       "category": "ai",
-      "kept": 8,
+      "kept": 4,
       "total": 10,
       "ok": true,
       "error": ""
@@ -167,7 +167,7 @@
     {
       "name": "InfoQ",
       "category": "patterns",
-      "kept": 6,
+      "kept": 10,
       "total": 15,
       "ok": true,
       "error": ""
