@@ -1,13 +1,13 @@
 {
-  "started_at": "2026-08-09T04:11:55.911421+00:00",
-  "duration_sec": 13.42,
+  "started_at": "2026-08-10T04:23:29.605920+00:00",
+  "duration_sec": 10.94,
   "feeds_ok": 21,
   "feeds_failed": 1,
   "feeds": [
     {
       "name": "CNBC",
       "category": "finance_global",
-      "kept": 14,
+      "kept": 10,
       "total": 30,
       "ok": true,
       "error": ""
@@ -15,8 +15,8 @@
     {
       "name": "Financial Times",
       "category": "finance_global",
-      "kept": 9,
-      "total": 9,
+      "kept": 8,
+      "total": 8,
       "ok": true,
       "error": ""
     },
@@ -31,15 +31,15 @@
     {
       "name": "Yahoo Finance",
       "category": "finance_global",
-      "kept": 0,
-      "total": 41,
+      "kept": 2,
+      "total": 48,
       "ok": true,
       "error": ""
     },
     {
       "name": "Reuters",
       "category": "finance_global",
-      "kept": 5,
+      "kept": 16,
       "total": 100,
       "ok": true,
       "error": ""
@@ -47,7 +47,7 @@
     {
       "name": "Economic Times",
       "category": "finance_india",
-      "kept": 36,
+      "kept": 50,
       "total": 50,
       "ok": true,
       "error": ""
@@ -55,7 +55,7 @@
     {
       "name": "LiveMint",
       "category": "finance_india",
-      "kept": 12,
+      "kept": 35,
       "total": 35,
       "ok": true,
       "error": ""
@@ -79,15 +79,15 @@
     {
       "name": "India Markets",
       "category": "finance_india",
-      "kept": 72,
-      "total": 72,
+      "kept": 100,
+      "total": 100,
       "ok": true,
       "error": ""
     },
     {
       "name": "TechCrunch",
       "category": "tech",
-      "kept": 5,
+      "kept": 7,
       "total": 20,
       "ok": true,
       "error": ""
@@ -95,7 +95,7 @@
     {
       "name": "Ars Technica",
       "category": "tech",
-      "kept": 2,
+      "kept": 1,
       "total": 20,
       "ok": true,
       "error": ""
@@ -103,7 +103,7 @@
     {
       "name": "The Verge",
       "category": "tech",
-      "kept": 7,
+      "kept": 5,
       "total": 10,
       "ok": true,
       "error": ""
@@ -111,7 +111,7 @@
     {
       "name": "Engadget",
       "category": "tech",
-      "kept": 10,
+      "kept": 6,
       "total": 20,
       "ok": true,
       "error": ""
@@ -119,8 +119,8 @@
     {
       "name": "Hacker News",
       "category": "tech",
-      "kept": 11,
-      "total": 12,
+      "kept": 10,
+      "total": 10,
       "ok": true,
       "error": ""
     },
@@ -167,7 +167,7 @@
     {
       "name": "InfoQ",
       "category": "patterns",
-      "kept": 3,
+      "kept": 2,
       "total": 15,
       "ok": true,
       "error": ""
@@ -191,9 +191,9 @@
   "ai_enabled": true,
   "ai_summarized": 27,
   "ai_note": "summarized 27/27",
-  "messages_built": 4,
+  "messages_built": 3,
   "delivered_per_chat": {
-    "5073493944": 4
+    "5073493944": 3
   },
   "failures": 0
 }
