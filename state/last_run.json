@@ -1,13 +1,13 @@
 {
-  "started_at": "2026-08-15T03:32:07.021864+00:00",
-  "duration_sec": 13.47,
+  "started_at": "2026-08-16T03:41:09.270385+00:00",
+  "duration_sec": 15.03,
   "feeds_ok": 22,
   "feeds_failed": 0,
   "feeds": [
     {
       "name": "CNBC",
       "category": "finance_global",
-      "kept": 26,
+      "kept": 15,
       "total": 30,
       "ok": true,
       "error": ""
@@ -31,7 +31,7 @@
     {
       "name": "Yahoo Finance",
       "category": "finance_global",
-      "kept": 1,
+      "kept": 4,
       "total": 49,
       "ok": true,
       "error": ""
@@ -39,7 +39,7 @@
     {
       "name": "Reuters",
       "category": "finance_global",
-      "kept": 40,
+      "kept": 4,
       "total": 100,
       "ok": true,
       "error": ""
@@ -47,7 +47,7 @@
     {
       "name": "Economic Times",
       "category": "finance_india",
-      "kept": 50,
+      "kept": 27,
       "total": 50,
       "ok": true,
       "error": ""
@@ -55,7 +55,7 @@
     {
       "name": "LiveMint",
       "category": "finance_india",
-      "kept": 35,
+      "kept": 14,
       "total": 35,
       "ok": true,
       "error": ""
@@ -79,15 +79,15 @@
     {
       "name": "India Markets",
       "category": "finance_india",
-      "kept": 100,
-      "total": 100,
+      "kept": 86,
+      "total": 86,
       "ok": true,
       "error": ""
     },
     {
       "name": "TechCrunch",
       "category": "tech",
-      "kept": 13,
+      "kept": 5,
       "total": 20,
       "ok": true,
       "error": ""
@@ -95,7 +95,7 @@
     {
       "name": "Ars Technica",
       "category": "tech",
-      "kept": 14,
+      "kept": 3,
       "total": 20,
       "ok": true,
       "error": ""
@@ -111,7 +111,7 @@
     {
       "name": "Engadget",
       "category": "tech",
-      "kept": 12,
+      "kept": 17,
       "total": 20,
       "ok": true,
       "error": ""
@@ -119,8 +119,8 @@
     {
       "name": "Hacker News",
       "category": "tech",
-      "kept": 13,
-      "total": 14,
+      "kept": 10,
+      "total": 12,
       "ok": true,
       "error": ""
     },
@@ -143,7 +143,7 @@
     {
       "name": "The Verge AI",
       "category": "ai",
-      "kept": 3,
+      "kept": 1,
       "total": 10,
       "ok": true,
       "error": ""
@@ -167,7 +167,7 @@
     {
       "name": "InfoQ",
       "category": "patterns",
-      "kept": 9,
+      "kept": 3,
       "total": 15,
       "ok": true,
       "error": ""
