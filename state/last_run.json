@@ -1,13 +1,13 @@
 {
-  "started_at": "2026-08-20T03:39:14.395278+00:00",
-  "duration_sec": 11.18,
+  "started_at": "2026-08-21T03:43:02.940925+00:00",
+  "duration_sec": 9.5,
   "feeds_ok": 22,
   "feeds_failed": 0,
   "feeds": [
     {
       "name": "CNBC",
       "category": "finance_global",
-      "kept": 30,
+      "kept": 28,
       "total": 30,
       "ok": true,
       "error": ""
@@ -15,8 +15,8 @@
     {
       "name": "Financial Times",
       "category": "finance_global",
-      "kept": 10,
-      "total": 10,
+      "kept": 9,
+      "total": 9,
       "ok": true,
       "error": ""
     },
@@ -32,14 +32,14 @@
       "name": "Yahoo Finance",
       "category": "finance_global",
       "kept": 1,
-      "total": 49,
+      "total": 48,
       "ok": true,
       "error": ""
     },
     {
       "name": "Reuters",
       "category": "finance_global",
-      "kept": 39,
+      "kept": 49,
       "total": 100,
       "ok": true,
       "error": ""
@@ -95,7 +95,7 @@
     {
       "name": "Ars Technica",
       "category": "tech",
-      "kept": 12,
+      "kept": 8,
       "total": 20,
       "ok": true,
       "error": ""
@@ -120,14 +120,14 @@
       "name": "Hacker News",
       "category": "tech",
       "kept": 15,
-      "total": 17,
+      "total": 20,
       "ok": true,
       "error": ""
     },
     {
       "name": "VentureBeat AI",
       "category": "ai",
-      "kept": 1,
+      "kept": 0,
       "total": 7,
       "ok": true,
       "error": ""
@@ -135,7 +135,7 @@
     {
       "name": "MIT Tech Review",
       "category": "ai",
-      "kept": 0,
+      "kept": 2,
       "total": 10,
       "ok": true,
       "error": ""
@@ -159,7 +159,7 @@
     {
       "name": "Martin Fowler",
       "category": "patterns",
-      "kept": 2,
+      "kept": 0,
       "total": 30,
       "ok": true,
       "error": ""
@@ -167,7 +167,7 @@
     {
       "name": "InfoQ",
       "category": "patterns",
-      "kept": 6,
+      "kept": 8,
       "total": 15,
       "ok": true,
       "error": ""
@@ -190,10 +190,10 @@
   },
   "ai_enabled": true,
   "ai_summarized": 0,
-  "ai_note": "error: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
-  "messages_built": 2,
+  "ai_note": "error: 403 Client Error: Forbidden for url: https://api.groq.com/openai/v1/chat/completions",
+  "messages_built": 3,
   "delivered_per_chat": {
-    "5073493944": 2
+    "5073493944": 3
   },
   "failures": 0
 }
