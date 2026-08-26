@@ -1,13 +1,13 @@
 {
-  "started_at": "2026-08-25T03:41:18.249104+00:00",
-  "duration_sec": 10.11,
+  "started_at": "2026-08-26T03:46:24.820387+00:00",
+  "duration_sec": 11.12,
   "feeds_ok": 22,
   "feeds_failed": 0,
   "feeds": [
     {
       "name": "CNBC",
       "category": "finance_global",
-      "kept": 28,
+      "kept": 29,
       "total": 30,
       "ok": true,
       "error": ""
@@ -15,8 +15,8 @@
     {
       "name": "Financial Times",
       "category": "finance_global",
-      "kept": 11,
-      "total": 11,
+      "kept": 10,
+      "total": 10,
       "ok": true,
       "error": ""
     },
@@ -31,7 +31,7 @@
     {
       "name": "Yahoo Finance",
       "category": "finance_global",
-      "kept": 8,
+      "kept": 5,
       "total": 48,
       "ok": true,
       "error": ""
@@ -39,7 +39,7 @@
     {
       "name": "Reuters",
       "category": "finance_global",
-      "kept": 65,
+      "kept": 47,
       "total": 100,
       "ok": true,
       "error": ""
@@ -87,7 +87,7 @@
     {
       "name": "TechCrunch",
       "category": "tech",
-      "kept": 16,
+      "kept": 20,
       "total": 20,
       "ok": true,
       "error": ""
@@ -95,7 +95,7 @@
     {
       "name": "Ars Technica",
       "category": "tech",
-      "kept": 11,
+      "kept": 10,
       "total": 20,
       "ok": true,
       "error": ""
@@ -111,7 +111,7 @@
     {
       "name": "Engadget",
       "category": "tech",
-      "kept": 17,
+      "kept": 20,
       "total": 20,
       "ok": true,
       "error": ""
@@ -120,7 +120,7 @@
       "name": "Hacker News",
       "category": "tech",
       "kept": 18,
-      "total": 19,
+      "total": 18,
       "ok": true,
       "error": ""
     },
@@ -135,7 +135,7 @@
     {
       "name": "MIT Tech Review",
       "category": "ai",
-      "kept": 2,
+      "kept": 1,
       "total": 10,
       "ok": true,
       "error": ""
@@ -143,7 +143,7 @@
     {
       "name": "The Verge AI",
       "category": "ai",
-      "kept": 0,
+      "kept": 2,
       "total": 10,
       "ok": true,
       "error": ""
@@ -159,7 +159,7 @@
     {
       "name": "Martin Fowler",
       "category": "patterns",
-      "kept": 1,
+      "kept": 0,
       "total": 30,
       "ok": true,
       "error": ""
@@ -167,7 +167,7 @@
     {
       "name": "InfoQ",
       "category": "patterns",
-      "kept": 5,
+      "kept": 6,
       "total": 15,
       "ok": true,
       "error": ""
@@ -191,9 +191,9 @@
   "ai_enabled": true,
   "ai_summarized": 0,
   "ai_note": "error: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
-  "messages_built": 2,
+  "messages_built": 3,
   "delivered_per_chat": {
-    "5073493944": 2
+    "5073493944": 3
   },
   "failures": 0
 }
