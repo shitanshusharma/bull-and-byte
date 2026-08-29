@@ -1,6 +1,6 @@
 {
-  "started_at": "2026-08-28T14:45:21.631092+00:00",
-  "duration_sec": 10.67,
+  "started_at": "2026-08-29T09:36:15.259948+00:00",
+  "duration_sec": 13.51,
   "feeds_ok": 22,
   "feeds_failed": 0,
   "feeds": [
@@ -15,8 +15,8 @@
     {
       "name": "Financial Times",
       "category": "finance_global",
-      "kept": 9,
-      "total": 9,
+      "kept": 10,
+      "total": 10,
       "ok": true,
       "error": ""
     },
@@ -31,15 +31,15 @@
     {
       "name": "Yahoo Finance",
       "category": "finance_global",
-      "kept": 33,
-      "total": 50,
+      "kept": 11,
+      "total": 48,
       "ok": true,
       "error": ""
     },
     {
       "name": "Reuters",
       "category": "finance_global",
-      "kept": 52,
+      "kept": 32,
       "total": 100,
       "ok": true,
       "error": ""
@@ -79,15 +79,15 @@
     {
       "name": "India Markets",
       "category": "finance_india",
-      "kept": 100,
-      "total": 100,
+      "kept": 96,
+      "total": 96,
       "ok": true,
       "error": ""
     },
     {
       "name": "TechCrunch",
       "category": "tech",
-      "kept": 20,
+      "kept": 14,
       "total": 20,
       "ok": true,
       "error": ""
@@ -95,7 +95,7 @@
     {
       "name": "Ars Technica",
       "category": "tech",
-      "kept": 15,
+      "kept": 10,
       "total": 20,
       "ok": true,
       "error": ""
@@ -103,7 +103,7 @@
     {
       "name": "The Verge",
       "category": "tech",
-      "kept": 10,
+      "kept": 8,
       "total": 10,
       "ok": true,
       "error": ""
@@ -111,7 +111,7 @@
     {
       "name": "Engadget",
       "category": "tech",
-      "kept": 20,
+      "kept": 15,
       "total": 20,
       "ok": true,
       "error": ""
@@ -119,15 +119,15 @@
     {
       "name": "Hacker News",
       "category": "tech",
-      "kept": 13,
-      "total": 13,
+      "kept": 14,
+      "total": 16,
       "ok": true,
       "error": ""
     },
     {
       "name": "VentureBeat AI",
       "category": "ai",
-      "kept": 1,
+      "kept": 0,
       "total": 7,
       "ok": true,
       "error": ""
@@ -143,7 +143,7 @@
     {
       "name": "The Verge AI",
       "category": "ai",
-      "kept": 7,
+      "kept": 1,
       "total": 10,
       "ok": true,
       "error": ""
@@ -159,7 +159,7 @@
     {
       "name": "Martin Fowler",
       "category": "patterns",
-      "kept": 1,
+      "kept": 0,
       "total": 30,
       "ok": true,
       "error": ""
@@ -167,7 +167,7 @@
     {
       "name": "InfoQ",
       "category": "patterns",
-      "kept": 8,
+      "kept": 6,
       "total": 15,
       "ok": true,
       "error": ""
@@ -191,9 +191,9 @@
   "ai_enabled": true,
   "ai_summarized": 0,
   "ai_note": "error: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
-  "messages_built": 3,
+  "messages_built": 2,
   "delivered_per_chat": {
-    "5073493944": 3
+    "5073493944": 2
   },
   "failures": 0
 }
