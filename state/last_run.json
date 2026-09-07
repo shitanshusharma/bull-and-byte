@@ -1,13 +1,13 @@
 {
-  "started_at": "2026-09-06T07:27:47.181057+00:00",
-  "duration_sec": 10.77,
+  "started_at": "2026-09-07T07:44:06.303568+00:00",
+  "duration_sec": 13.57,
   "feeds_ok": 21,
   "feeds_failed": 1,
   "feeds": [
     {
       "name": "CNBC",
       "category": "finance_global",
-      "kept": 15,
+      "kept": 14,
       "total": 30,
       "ok": true,
       "error": ""
@@ -15,15 +15,15 @@
     {
       "name": "Financial Times",
       "category": "finance_global",
-      "kept": 8,
-      "total": 8,
+      "kept": 10,
+      "total": 10,
       "ok": true,
       "error": ""
     },
     {
       "name": "MarketWatch",
       "category": "finance_global",
-      "kept": 10,
+      "kept": 8,
       "total": 10,
       "ok": true,
       "error": ""
@@ -31,15 +31,15 @@
     {
       "name": "Yahoo Finance",
       "category": "finance_global",
-      "kept": 0,
-      "total": 49,
+      "kept": 4,
+      "total": 50,
       "ok": true,
       "error": ""
     },
     {
       "name": "Reuters",
       "category": "finance_global",
-      "kept": 7,
+      "kept": 19,
       "total": 100,
       "ok": true,
       "error": ""
@@ -47,7 +47,7 @@
     {
       "name": "Economic Times",
       "category": "finance_india",
-      "kept": 26,
+      "kept": 50,
       "total": 50,
       "ok": true,
       "error": ""
@@ -55,7 +55,7 @@
     {
       "name": "LiveMint",
       "category": "finance_india",
-      "kept": 8,
+      "kept": 35,
       "total": 35,
       "ok": true,
       "error": ""
@@ -71,7 +71,7 @@
     {
       "name": "Business Standard",
       "category": "finance_india",
-      "kept": 14,
+      "kept": 35,
       "total": 35,
       "ok": true,
       "error": ""
@@ -79,15 +79,15 @@
     {
       "name": "India Markets",
       "category": "finance_india",
-      "kept": 55,
-      "total": 55,
+      "kept": 100,
+      "total": 100,
       "ok": true,
       "error": ""
     },
     {
       "name": "TechCrunch",
       "category": "tech",
-      "kept": 5,
+      "kept": 4,
       "total": 20,
       "ok": true,
       "error": ""
@@ -95,7 +95,7 @@
     {
       "name": "Ars Technica",
       "category": "tech",
-      "kept": 1,
+      "kept": 2,
       "total": 20,
       "ok": true,
       "error": ""
@@ -103,7 +103,7 @@
     {
       "name": "The Verge",
       "category": "tech",
-      "kept": 8,
+      "kept": 7,
       "total": 10,
       "ok": true,
       "error": ""
@@ -119,8 +119,8 @@
     {
       "name": "Hacker News",
       "category": "tech",
-      "kept": 10,
-      "total": 15,
+      "kept": 9,
+      "total": 11,
       "ok": true,
       "error": ""
     },
@@ -167,7 +167,7 @@
     {
       "name": "InfoQ",
       "category": "patterns",
-      "kept": 5,
+      "kept": 6,
       "total": 15,
       "ok": true,
       "error": ""
@@ -191,9 +191,9 @@
   "ai_enabled": true,
   "ai_summarized": 0,
   "ai_note": "error: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
-  "messages_built": 2,
+  "messages_built": 3,
   "delivered_per_chat": {
-    "5073493944": 2
+    "5073493944": 3
   },
   "failures": 0
 }
