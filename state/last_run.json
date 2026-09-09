@@ -1,13 +1,13 @@
 {
-  "started_at": "2026-09-08T07:37:41.084963+00:00",
-  "duration_sec": 13.31,
+  "started_at": "2026-09-09T07:43:07.102621+00:00",
+  "duration_sec": 11.2,
   "feeds_ok": 21,
   "feeds_failed": 1,
   "feeds": [
     {
       "name": "CNBC",
       "category": "finance_global",
-      "kept": 23,
+      "kept": 28,
       "total": 30,
       "ok": true,
       "error": ""
@@ -64,7 +64,7 @@
       "name": "Moneycontrol",
       "category": "finance_india",
       "kept": 0,
-      "total": 0,
+      "total": 15,
       "ok": true,
       "error": ""
     },
@@ -87,7 +87,7 @@
     {
       "name": "TechCrunch",
       "category": "tech",
-      "kept": 4,
+      "kept": 17,
       "total": 20,
       "ok": true,
       "error": ""
@@ -95,7 +95,7 @@
     {
       "name": "Ars Technica",
       "category": "tech",
-      "kept": 1,
+      "kept": 16,
       "total": 20,
       "ok": true,
       "error": ""
@@ -103,7 +103,7 @@
     {
       "name": "The Verge",
       "category": "tech",
-      "kept": 8,
+      "kept": 10,
       "total": 10,
       "ok": true,
       "error": ""
@@ -119,8 +119,8 @@
     {
       "name": "Hacker News",
       "category": "tech",
-      "kept": 8,
-      "total": 13,
+      "kept": 14,
+      "total": 17,
       "ok": true,
       "error": ""
     },
@@ -135,7 +135,7 @@
     {
       "name": "MIT Tech Review",
       "category": "ai",
-      "kept": 0,
+      "kept": 2,
       "total": 10,
       "ok": true,
       "error": ""
@@ -143,7 +143,7 @@
     {
       "name": "The Verge AI",
       "category": "ai",
-      "kept": 0,
+      "kept": 6,
       "total": 10,
       "ok": true,
       "error": ""
@@ -159,7 +159,7 @@
     {
       "name": "Martin Fowler",
       "category": "patterns",
-      "kept": 0,
+      "kept": 2,
       "total": 30,
       "ok": true,
       "error": ""
@@ -167,7 +167,7 @@
     {
       "name": "InfoQ",
       "category": "patterns",
-      "kept": 5,
+      "kept": 7,
       "total": 15,
       "ok": true,
       "error": ""
