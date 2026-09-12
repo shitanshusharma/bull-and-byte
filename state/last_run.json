@@ -1,13 +1,13 @@
 {
-  "started_at": "2026-09-11T07:38:03.848446+00:00",
-  "duration_sec": 10.82,
+  "started_at": "2026-09-12T07:30:36.007581+00:00",
+  "duration_sec": 11.47,
   "feeds_ok": 21,
   "feeds_failed": 1,
   "feeds": [
     {
       "name": "CNBC",
       "category": "finance_global",
-      "kept": 29,
+      "kept": 28,
       "total": 30,
       "ok": true,
       "error": ""
@@ -15,8 +15,8 @@
     {
       "name": "Financial Times",
       "category": "finance_global",
-      "kept": 10,
-      "total": 10,
+      "kept": 9,
+      "total": 9,
       "ok": true,
       "error": ""
     },
@@ -31,15 +31,15 @@
     {
       "name": "Yahoo Finance",
       "category": "finance_global",
-      "kept": 0,
-      "total": 48,
+      "kept": 6,
+      "total": 49,
       "ok": true,
       "error": ""
     },
     {
       "name": "Reuters",
       "category": "finance_global",
-      "kept": 47,
+      "kept": 33,
       "total": 100,
       "ok": true,
       "error": ""
@@ -64,7 +64,7 @@
       "name": "Moneycontrol",
       "category": "finance_india",
       "kept": 0,
-      "total": 15,
+      "total": 0,
       "ok": true,
       "error": ""
     },
@@ -87,7 +87,7 @@
     {
       "name": "TechCrunch",
       "category": "tech",
-      "kept": 20,
+      "kept": 12,
       "total": 20,
       "ok": true,
       "error": ""
@@ -95,7 +95,7 @@
     {
       "name": "Ars Technica",
       "category": "tech",
-      "kept": 9,
+      "kept": 13,
       "total": 20,
       "ok": true,
       "error": ""
@@ -111,7 +111,7 @@
     {
       "name": "Engadget",
       "category": "tech",
-      "kept": 20,
+      "kept": 9,
       "total": 20,
       "ok": true,
       "error": ""
@@ -120,7 +120,7 @@
       "name": "Hacker News",
       "category": "tech",
       "kept": 14,
-      "total": 17,
+      "total": 19,
       "ok": true,
       "error": ""
     },
@@ -143,7 +143,7 @@
     {
       "name": "The Verge AI",
       "category": "ai",
-      "kept": 6,
+      "kept": 3,
       "total": 10,
       "ok": true,
       "error": ""
@@ -167,7 +167,7 @@
     {
       "name": "InfoQ",
       "category": "patterns",
-      "kept": 6,
+      "kept": 8,
       "total": 15,
       "ok": true,
       "error": ""
