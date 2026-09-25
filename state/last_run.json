@@ -1,6 +1,6 @@
 {
-  "started_at": "2026-09-24T08:00:01.968253+00:00",
-  "duration_sec": 19.66,
+  "started_at": "2026-09-25T08:23:54.625650+00:00",
+  "duration_sec": 9.86,
   "feeds_ok": 21,
   "feeds_failed": 1,
   "feeds": [
@@ -31,7 +31,7 @@
     {
       "name": "Yahoo Finance",
       "category": "finance_global",
-      "kept": 4,
+      "kept": 0,
       "total": 49,
       "ok": true,
       "error": ""
@@ -39,7 +39,7 @@
     {
       "name": "Reuters",
       "category": "finance_global",
-      "kept": 53,
+      "kept": 41,
       "total": 100,
       "ok": true,
       "error": ""
@@ -64,7 +64,7 @@
       "name": "Moneycontrol",
       "category": "finance_india",
       "kept": 0,
-      "total": 0,
+      "total": 15,
       "ok": true,
       "error": ""
     },
@@ -95,7 +95,7 @@
     {
       "name": "Ars Technica",
       "category": "tech",
-      "kept": 16,
+      "kept": 14,
       "total": 20,
       "ok": true,
       "error": ""
@@ -119,8 +119,8 @@
     {
       "name": "Hacker News",
       "category": "tech",
-      "kept": 13,
-      "total": 14,
+      "kept": 11,
+      "total": 20,
       "ok": true,
       "error": ""
     },
@@ -135,7 +135,7 @@
     {
       "name": "MIT Tech Review",
       "category": "ai",
-      "kept": 1,
+      "kept": 0,
       "total": 10,
       "ok": true,
       "error": ""
@@ -159,7 +159,7 @@
     {
       "name": "Martin Fowler",
       "category": "patterns",
-      "kept": 0,
+      "kept": 2,
       "total": 30,
       "ok": true,
       "error": ""
@@ -167,7 +167,7 @@
     {
       "name": "InfoQ",
       "category": "patterns",
-      "kept": 10,
+      "kept": 6,
       "total": 15,
       "ok": true,
       "error": ""
