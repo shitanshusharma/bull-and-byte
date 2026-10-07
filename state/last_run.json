@@ -1,6 +1,6 @@
 {
-  "started_at": "2026-10-06T09:39:04.574320+00:00",
-  "duration_sec": 8.68,
+  "started_at": "2026-10-07T09:35:38.604215+00:00",
+  "duration_sec": 9.89,
   "feeds_ok": 20,
   "feeds_failed": 2,
   "feeds": [
@@ -39,7 +39,7 @@
     {
       "name": "Reuters",
       "category": "finance_global",
-      "kept": 60,
+      "kept": 48,
       "total": 100,
       "ok": true,
       "error": ""
@@ -47,8 +47,8 @@
     {
       "name": "Economic Times",
       "category": "finance_india",
-      "kept": 41,
-      "total": 41,
+      "kept": 50,
+      "total": 50,
       "ok": true,
       "error": ""
     },
@@ -64,7 +64,7 @@
       "name": "Moneycontrol",
       "category": "finance_india",
       "kept": 0,
-      "total": 0,
+      "total": 15,
       "ok": true,
       "error": ""
     },
@@ -87,7 +87,7 @@
     {
       "name": "TechCrunch",
       "category": "tech",
-      "kept": 19,
+      "kept": 20,
       "total": 20,
       "ok": true,
       "error": ""
@@ -95,7 +95,7 @@
     {
       "name": "Ars Technica",
       "category": "tech",
-      "kept": 10,
+      "kept": 15,
       "total": 20,
       "ok": true,
       "error": ""
@@ -119,8 +119,8 @@
     {
       "name": "Hacker News",
       "category": "tech",
-      "kept": 14,
-      "total": 17,
+      "kept": 13,
+      "total": 15,
       "ok": true,
       "error": ""
     },
@@ -135,7 +135,7 @@
     {
       "name": "MIT Tech Review",
       "category": "ai",
-      "kept": 3,
+      "kept": 0,
       "total": 10,
       "ok": true,
       "error": ""
@@ -143,7 +143,7 @@
     {
       "name": "The Verge AI",
       "category": "ai",
-      "kept": 10,
+      "kept": 5,
       "total": 10,
       "ok": true,
       "error": ""
@@ -167,7 +167,7 @@
     {
       "name": "InfoQ",
       "category": "patterns",
-      "kept": 9,
+      "kept": 6,
       "total": 15,
       "ok": true,
       "error": ""
