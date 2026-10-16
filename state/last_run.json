@@ -1,6 +1,6 @@
 {
-  "started_at": "2026-10-15T07:52:25.530665+00:00",
-  "duration_sec": 10.49,
+  "started_at": "2026-10-16T07:44:33.128342+00:00",
+  "duration_sec": 27.23,
   "feeds_ok": 20,
   "feeds_failed": 2,
   "feeds": [
@@ -15,8 +15,8 @@
     {
       "name": "Financial Times",
       "category": "finance_global",
-      "kept": 11,
-      "total": 11,
+      "kept": 10,
+      "total": 10,
       "ok": true,
       "error": ""
     },
@@ -39,7 +39,7 @@
     {
       "name": "Reuters",
       "category": "finance_global",
-      "kept": 40,
+      "kept": 54,
       "total": 100,
       "ok": true,
       "error": ""
@@ -64,7 +64,7 @@
       "name": "Moneycontrol",
       "category": "finance_india",
       "kept": 0,
-      "total": 15,
+      "total": 0,
       "ok": true,
       "error": ""
     },
@@ -87,7 +87,7 @@
     {
       "name": "TechCrunch",
       "category": "tech",
-      "kept": 20,
+      "kept": 19,
       "total": 20,
       "ok": true,
       "error": ""
@@ -95,7 +95,7 @@
     {
       "name": "Ars Technica",
       "category": "tech",
-      "kept": 15,
+      "kept": 13,
       "total": 20,
       "ok": true,
       "error": ""
@@ -119,7 +119,7 @@
     {
       "name": "Hacker News",
       "category": "tech",
-      "kept": 18,
+      "kept": 15,
       "total": 20,
       "ok": true,
       "error": ""
@@ -167,7 +167,7 @@
     {
       "name": "InfoQ",
       "category": "patterns",
-      "kept": 5,
+      "kept": 6,
       "total": 15,
       "ok": true,
       "error": ""
@@ -191,9 +191,9 @@
   "ai_enabled": true,
   "ai_summarized": 0,
   "ai_note": "error: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
-  "messages_built": 2,
+  "messages_built": 3,
   "delivered_per_chat": {
-    "5073493944": 2
+    "5073493944": 3
   },
   "failures": 0
 }
