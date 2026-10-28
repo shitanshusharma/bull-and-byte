@@ -1,13 +1,13 @@
 {
-  "started_at": "2026-10-27T08:31:22.323654+00:00",
-  "duration_sec": 12.53,
+  "started_at": "2026-10-28T09:10:14.668593+00:00",
+  "duration_sec": 8.64,
   "feeds_ok": 20,
   "feeds_failed": 2,
   "feeds": [
     {
       "name": "CNBC",
       "category": "finance_global",
-      "kept": 30,
+      "kept": 29,
       "total": 30,
       "ok": true,
       "error": ""
@@ -39,7 +39,7 @@
     {
       "name": "Reuters",
       "category": "finance_global",
-      "kept": 69,
+      "kept": 48,
       "total": 100,
       "ok": true,
       "error": ""
@@ -79,15 +79,15 @@
     {
       "name": "India Markets",
       "category": "finance_india",
-      "kept": 48,
-      "total": 48,
+      "kept": 89,
+      "total": 89,
       "ok": true,
       "error": ""
     },
     {
       "name": "TechCrunch",
       "category": "tech",
-      "kept": 15,
+      "kept": 20,
       "total": 20,
       "ok": true,
       "error": ""
@@ -95,7 +95,7 @@
     {
       "name": "Ars Technica",
       "category": "tech",
-      "kept": 12,
+      "kept": 16,
       "total": 20,
       "ok": true,
       "error": ""
@@ -119,7 +119,7 @@
     {
       "name": "Hacker News",
       "category": "tech",
-      "kept": 15,
+      "kept": 14,
       "total": 18,
       "ok": true,
       "error": ""
@@ -135,7 +135,7 @@
     {
       "name": "MIT Tech Review",
       "category": "ai",
-      "kept": 2,
+      "kept": 1,
       "total": 10,
       "ok": true,
       "error": ""
@@ -143,7 +143,7 @@
     {
       "name": "The Verge AI",
       "category": "ai",
-      "kept": 8,
+      "kept": 7,
       "total": 10,
       "ok": true,
       "error": ""
@@ -167,7 +167,7 @@
     {
       "name": "InfoQ",
       "category": "patterns",
-      "kept": 11,
+      "kept": 7,
       "total": 15,
       "ok": true,
       "error": ""
@@ -191,9 +191,9 @@
   "ai_enabled": true,
   "ai_summarized": 0,
   "ai_note": "error: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
-  "messages_built": 3,
+  "messages_built": 2,
   "delivered_per_chat": {
-    "5073493944": 3
+    "5073493944": 2
   },
   "failures": 0
 }
