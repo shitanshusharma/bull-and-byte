@@ -1,6 +1,6 @@
 {
-  "started_at": "2026-11-04T10:13:56.427435+00:00",
-  "duration_sec": 9.28,
+  "started_at": "2026-11-05T10:07:06.106703+00:00",
+  "duration_sec": 13.75,
   "feeds_ok": 20,
   "feeds_failed": 2,
   "feeds": [
@@ -15,8 +15,8 @@
     {
       "name": "Financial Times",
       "category": "finance_global",
-      "kept": 11,
-      "total": 11,
+      "kept": 12,
+      "total": 12,
       "ok": true,
       "error": ""
     },
@@ -39,7 +39,7 @@
     {
       "name": "Reuters",
       "category": "finance_global",
-      "kept": 63,
+      "kept": 56,
       "total": 100,
       "ok": true,
       "error": ""
@@ -71,7 +71,7 @@
     {
       "name": "Business Standard",
       "category": "finance_india",
-      "kept": 34,
+      "kept": 35,
       "total": 35,
       "ok": true,
       "error": ""
@@ -79,8 +79,8 @@
     {
       "name": "India Markets",
       "category": "finance_india",
-      "kept": 100,
-      "total": 100,
+      "kept": 83,
+      "total": 83,
       "ok": true,
       "error": ""
     },
@@ -111,7 +111,7 @@
     {
       "name": "Engadget",
       "category": "tech",
-      "kept": 20,
+      "kept": 14,
       "total": 20,
       "ok": true,
       "error": ""
@@ -119,8 +119,8 @@
     {
       "name": "Hacker News",
       "category": "tech",
-      "kept": 10,
-      "total": 15,
+      "kept": 19,
+      "total": 20,
       "ok": true,
       "error": ""
     },
@@ -135,7 +135,7 @@
     {
       "name": "MIT Tech Review",
       "category": "ai",
-      "kept": 1,
+      "kept": 2,
       "total": 10,
       "ok": true,
       "error": ""
@@ -167,7 +167,7 @@
     {
       "name": "InfoQ",
       "category": "patterns",
-      "kept": 7,
+      "kept": 5,
       "total": 15,
       "ok": true,
       "error": ""
@@ -191,9 +191,9 @@
   "ai_enabled": true,
   "ai_summarized": 0,
   "ai_note": "error: 404 Client Error: Not Found for url: https://api.groq.com/openai/v1/chat/completions",
-  "messages_built": 2,
+  "messages_built": 3,
   "delivered_per_chat": {
-    "5073493944": 2
+    "5073493944": 3
   },
   "failures": 0
 }
