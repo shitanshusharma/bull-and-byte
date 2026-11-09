@@ -1,13 +1,13 @@
 {
-  "started_at": "2026-11-08T09:44:29.435712+00:00",
-  "duration_sec": 10.04,
+  "started_at": "2026-11-09T10:42:27.901278+00:00",
+  "duration_sec": 10.92,
   "feeds_ok": 20,
   "feeds_failed": 2,
   "feeds": [
     {
       "name": "CNBC",
       "category": "finance_global",
-      "kept": 23,
+      "kept": 14,
       "total": 30,
       "ok": true,
       "error": ""
@@ -15,8 +15,8 @@
     {
       "name": "Financial Times",
       "category": "finance_global",
-      "kept": 9,
-      "total": 9,
+      "kept": 11,
+      "total": 11,
       "ok": true,
       "error": ""
     },
@@ -39,7 +39,7 @@
     {
       "name": "Reuters",
       "category": "finance_global",
-      "kept": 8,
+      "kept": 26,
       "total": 100,
       "ok": true,
       "error": ""
@@ -71,7 +71,7 @@
     {
       "name": "Business Standard",
       "category": "finance_india",
-      "kept": 11,
+      "kept": 28,
       "total": 35,
       "ok": true,
       "error": ""
@@ -79,15 +79,15 @@
     {
       "name": "India Markets",
       "category": "finance_india",
-      "kept": 69,
-      "total": 69,
+      "kept": 81,
+      "total": 81,
       "ok": true,
       "error": ""
     },
     {
       "name": "TechCrunch",
       "category": "tech",
-      "kept": 5,
+      "kept": 10,
       "total": 20,
       "ok": true,
       "error": ""
@@ -95,7 +95,7 @@
     {
       "name": "Ars Technica",
       "category": "tech",
-      "kept": 2,
+      "kept": 1,
       "total": 20,
       "ok": true,
       "error": ""
@@ -120,7 +120,7 @@
       "name": "Hacker News",
       "category": "tech",
       "kept": 16,
-      "total": 19,
+      "total": 17,
       "ok": true,
       "error": ""
     },
@@ -167,7 +167,7 @@
     {
       "name": "InfoQ",
       "category": "patterns",
-      "kept": 4,
+      "kept": 3,
       "total": 15,
       "ok": true,
       "error": ""
